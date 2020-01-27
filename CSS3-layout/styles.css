@@ -1,0 +1,172 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+    text-align: center;
+    background-color: yellow;
+    direction: rtl;
+}
+
+section {
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 80% 5%;
+    grid-template-columns: repeat(12, 1fr);
+}
+header, footer {
+    grid-column: span 12;
+}
+aside {
+    grid-column: span 2;
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    padding: 20px;
+    grid-column: span 10;
+}
+
+
+header{
+    border-bottom: 10px solid white;
+}
+
+footer{
+    border-top: 10px solid white;
+}
+
+
+aside{
+    border-right: 10px solid white;
+}
+
+aside label {
+    display: block;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.container [type="radio"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    z-index: -1;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    display: none;
+    height: 100%;
+}
+
+.container [type="radio"]:checked + .content {
+    display: block;
+}
+
+aside label {
+text-decoration: underline;
+
+}
+h2, .corner-example{
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.shadowing-example{
+    text-shadow:  blueviolet 5px 5px   ;
+}
+.Gradient-Exampale{
+    color: aqua;
+    background-image: linear-gradient(45deg, yellow, black, red, blue);
+  
+}
+.Column-Text-Example{
+    column-count: 3;
+}
+
+.Font-Support-Example{
+    font-size: xx-large;
+    font-weight: 900;
+    font-family: NewFont, Arial, Helvetica, sans-serif;
+}
+@font-face {
+    src: url("assets/fonts/Hernitta.otf");
+    font-family: NewFont;
+}
+
+.Transformation-a {
+    width: 150px;
+    height: 80px;
+    background-color: red;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari 3-8 */
+    transform: rotate(20deg);
+  }
+  
+  .Transformation-b {
+    width: 150px;
+    height: 80px;
+    background-color: green;
+    -ms-transform: skewY(20deg); /* IE 9 */
+    -webkit-transform: skewY(20deg); /* Safari 3-8 */
+    transform: skewY(20deg);
+  }
+  
+  .Transformation-c {
+    width: 150px;
+    height: 80px;
+    background-color: pink;
+    -ms-transform: scaleY(1.5); /* IE 9 */
+    -webkit-transform: scaleY(1.5); /* Safari 3-8 */
+    transform: scaleY(1.5);
+  }
+
+  .Transitions-Example {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+    -webkit-transition: width 2s; /* Safari 3.1 to 6.0 */
+  }
+  
+  .Transitions-Example:hover {
+    width: 300px;
+  }
+
+  .Animation-Example {
+    height: 250px;
+    width: 250px;
+    margin: 0 auto;
+    background-color: red;
+    animation-name: stretch;
+    animation-duration: 1.5s; 
+    animation-timing-function: ease-out; 
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+  }
+  
+  @keyframes stretch {
+    0% {
+      transform: scale(.3);
+      background-color: red;
+      border-radius: 100%;
+    }
+    50% {
+      background-color: orange;
+    }
+    100% {
+      transform: scale(1.5);
+      background-color: yellow;
+    }

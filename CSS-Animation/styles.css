@@ -1,0 +1,42 @@
+
+body {
+    padding-top: 200px;
+}
+p.title {
+    color: azure;
+    width: 200px;
+    height: 100px;
+    line-height: 100px;
+    margin: 30px;
+    font-size: x-large;
+    /* background-color: orange; */
+    border: 1px solid black;
+    text-align: center;
+    background-image: linear-gradient(45deg, yellow, black, red, blue);
+    margin: auto;
+    font-family: NewFont, Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+}
+
+
+@font-face {
+    src: url("assets/fonts/Hernitta.otf");
+    font-family: NewFont;
+}
+
+
+
+p.title {
+    -webkit-animation: rotation 6s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+            -webkit-transform: rotate(0deg);
+    }
+    to {
+            -webkit-transform: rotate(359deg);
+    }
+}
+
+

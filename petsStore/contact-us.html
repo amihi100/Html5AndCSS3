@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>Coolest pet store!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="contact-us">
+    <div class="centerMe">
+        <br>
+        <div class="siteTitle">
+            <h1>Welcome to the coolest pet store in the country!</h1>
+        </div>
+
+        <br>
+        <hr>
+        <h2>
+            <a href="index.html">Home page</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="animals.html">Animals</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="contact-us.html">Contact us</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </h2>
+        <br> <br>
+    </div>
+    <h2>
+        Contact us:
+    </h1>
+    <form action="save.html">
+        <table>
+            <tr>
+                <td><label for="privateName">Private name:</label></td>
+                <td><input type="text" name="privateName" id="privateName" required></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last name:</label></td>
+                <td><input type="text" name="lastName" id="lastName" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender:</label></td>
+                <td>
+                    <input type="radio" name="gender" id="male" value="male" required>
+                    <label for="male">Male</label>
+                    <br>
+                    <input type="radio" name="gender" id="female" value="female" required>
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <lable for="city">Citfy:</lable>
+                </td>
+                <td><select id="city" name="city" required>
+                        <option value="">Select city</option>
+                        <option value="telAviv">Tel Aviv</option>
+                        <option value="ramatGan">Ramat Gan</option>
+                        <option value="kfarSaba">Kfar Saba</option>
+                        <option value="raanana">Raanana</option>
+                    </select>
+                    <lable for="city">City:</lable>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label>
+                <td> <textarea rows="5" cols="25" id="message" name="message" required></textarea>
+                </td>
+
+                <!-- This  &nbsp is tab for the send an clean buttons -->
+            </tr>
+            <td> &nbsp; </td>
+            <td>
+                <button>Send</button>
+                <button type="reset" value="Reset">Clean</button>
+            </td>
+        </table>
+    </form>
+
+    <div class="centerMe">
+        <h3>All rights reserved ©</h3>
+    </div>
+
+</body>
+
+</html>

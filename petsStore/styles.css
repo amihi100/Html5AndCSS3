@@ -1,0 +1,78 @@
+body{
+    direction: ltr;
+}
+
+
+
+p, h2, h3, label, table{
+    font-family: cursive ;
+    font-style: italic ;
+    font-size: larger;
+    color: blueviolet;
+    align-content: center;
+}
+
+/* body, button{
+    background-color: #add8e6;
+} */
+
+a{
+    color: red;
+    
+}
+
+textarea, select, input{
+    background-color: yellow;
+}
+
+a:hover{
+    color:green;
+}
+
+div.centerMe{
+    text-align: center;
+}
+
+div.center-images{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div.siteTitle{
+    color: deeppink;
+    text-decoration: underline;
+    
+}
+
+body.home-page{
+    background-image: url(assets/images/sky0.jpg) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.animals{
+    background-image: url(assets/images/sky1.jpg) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+body.contact-us{
+    background-image: url(assets/images/sky2.jpg) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body.save-page{
+    background-image: url(assets/images/sky3.jpg) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

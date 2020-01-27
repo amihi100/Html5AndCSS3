@@ -1,0 +1,46 @@
+body{
+
+    background-image: url(assets/images/wood.jpg) ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    direction: rtl;
+}
+
+h1.header{
+    color: red;
+    text-align: center;
+}
+
+p.welcome{
+    text-align: center;
+    font-size: x-large;
+}
+
+table.login{
+   
+/* width | style */
+border: solid 1px;
+text-align: left;
+}
+
+input{
+    background-color: yellow;
+}
+
+input[type="submit"] {
+    background-color: skyblue;
+}
+
+caption{
+    font-size: large;
+}
+#copyrights, #container{
+    text-align: center;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}

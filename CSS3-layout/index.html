@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        CSS3 - layout
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <header>CSS3 Features</header>
+        <main>
+            <div class="container">
+                <input type="radio" name="cont" id="content-1" style="visibility: hidden;" checked>
+                <div class="content">
+                    <h2>New Selectors</h2>
+                    <br>
+                    p::selection {
+                    background-color: yellow;
+                    }
+                    <br>
+                    p:nth-of-type(3) {
+                    color: lightcoral;
+                    }
+                    <br>
+                    p:first-of-type {
+                    color: green;
+                    }
+                    <br>
+                    p:last-of-type {
+                    color: red;
+                    }
+                    <br>
+                    p:nth-of-type(even) {
+                    background-color: lightgreen;
+                    }
+                    <br>
+                    p:nth-of-type(odd) {
+                    background-color: lightsteelblue;
+                    }<br>
+                </div>
+                <input type="radio" name="cont" id="content-2" style="visibility: hidden;">
+                <div class="content">
+
+                    <h2>Round corners</h2>
+                    <div class=Round-Corners>
+                        <br>
+                        h2{
+                        <br>
+                        border-style: solid;
+                        <br>
+                        border-radius: 20px;
+                        <br>
+                        }
+                        <br>
+                    </div>
+                    <br>
+                    <span class="corner-example"> &nbsp; EXAMPLE &nbsp;</span>
+                </div>
+                <input type="radio" name="cont" id="content-3" style="visibility: hidden;">
+                <div class="content">
+                    <h2>Shadowing</h2>
+                    <br>
+                    text-shadow: blueviolet 5px 5px ;
+                    <br>
+                    <div class="shadowing-example">
+                        SHADOWING-EXAMPLE
+                    </div>
+                </div>
+                <input type="radio" name="cont" id="content-4" style="visibility: hidden;">
+                <div class="content">
+                    <h2>Gradient</h2>
+                    background-image: linear-gradient(45deg, yellow, black, red, blue);
+                    <br><br>
+                    <div class="Gradient-Exampale">
+                        Gradient-Exampale
+                    </div>
+                </div>
+                <input type="radio" name="cont" id="content-5" style="visibility: hidden;">
+                <div class="content">
+                    <h2>Column Text</h2>
+                    Example:
+                    <br><br>
+                    <div class="Column-Text-Example">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel
+                        illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
+                        blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber
+                        tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat
+                        facer possim assum.
+                    </div>
+                </div>
+                <input type="radio" name="cont" id="content-6" style="visibility: hidden;">
+                <div class="content">
+                    <h2>Font Support</h2>
+                    <div class="Font-Support-Example">
+                        Font-Support-Example
+                    </div>
+                </div>
+                <input type="radio" name="cont" id="content-7" style="visibility: hidden;">
+                <div class="content">
+                    <h2>Transformation</h2>
+                    <br>
+                    <h3>transform: rotate(20deg):</h3>
+                    <div class="Transformation-a">Hello World!</div>
+                    <br>
+                    <h3>transform: skewY(20deg):</h3>
+                    <div class="Transformation-b">Hello World!</div>
+                    <br>
+                    <h3>transform: scaleY(1.5):</h3>
+                    <div class="Transformation-c">Hello World!</div>
+                </div>
+                <input type="radio" name="cont" id="content-8" style="visibility: hidden;">
+                <div class="content">
+                    <h2>Transitions</h2>
+                    <div class="Transitions-Example">
+                        Hover Me :)
+                    </div>
+                </div>
+                <input type="radio" name="cont" id="content-9" style="visibility: hidden;">
+                <div class="content">
+                    <h2>Animation</h2>
+                    <br>
+                    Example:
+                    <br>
+                    <div class="Animation-Example">
+                        Animation
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div asisde_left>
+                <label for="content-1" class="Selectors">New Selectors</label>
+                <label for="content-2" class="Cornres">Round Cornres</label>
+                <label for="content-3" class="Shadowing">Shadowing</label>
+                <label for="content-4" class="Gradient">Gradient</label>
+                <label for="content-5" class="Column">Column Text</label>
+                <label for="content-6" class="fontSupport">Font Support</label>
+                <label for="content-7" class="Transformatoin">Transformation</label>
+                <label for="content-8" class="Transitions">Transitions</label>
+                <label for="content-9" class="Animation">Animation</label>
+            </div>
+        </aside>
+        <footer>All Rights Reserved</footer>
+    </section>
+</body>
+
+</html>

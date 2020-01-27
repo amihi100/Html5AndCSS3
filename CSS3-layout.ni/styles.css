@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: x-large;
+    text-align: center;
+    background-color: gray;
+    direction: rtl;
+}
+
+section {
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 15% 80% 5%;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+header, footer {
+    grid-column: span 12;
+}
+
+aside {
+    grid-column: span 2;
+}
+
+main {
+    display: flex;
+    /* align-items: stretch; */
+    /* justify-content: center; */
+     padding: 2px; 
+    grid-column: span 10;
+}
+
+header{
+    border-bottom: 10px solid white;
+}
+
+footer{
+    border-top: 10px solid white;
+}
+
+
+aside{
+    border-right: 10px solid white;
+}
+
+aside label {
+    display: block;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    display: none;
+    height: 100%;
+    background-color: white;
+}
+
+
+.container [type="radio"] {
+    position: absolute;
+
+    /* All 4 zeros values to not display the radio button */
+     top: 0;
+    right: 0;
+    width: 0;
+    height: 0; 
+    /* z-index: -1;  */
+}
+
+.container [type="radio"]:checked + .content {
+    display: block;
+}
+
